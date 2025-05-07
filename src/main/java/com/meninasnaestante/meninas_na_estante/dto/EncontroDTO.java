@@ -7,5 +7,6 @@ public class EncontroDTO {
     String livroSugerido;
     LocalDateTime dataHora;
     String descricao;
+    
 
 }
