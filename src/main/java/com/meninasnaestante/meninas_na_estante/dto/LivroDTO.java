@@ -6,7 +6,6 @@ import jakarta.persistence.Column;
 
 
 public class LivroDTO {
-   
 
 	Long id;
     String titulo;

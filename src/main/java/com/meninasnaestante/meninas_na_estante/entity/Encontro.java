@@ -19,6 +19,6 @@ public class Encontro {
     private String livroSugerido;
     private LocalDateTime dataHora;
     private String descricao;
-    private boolean revisado = false;
+    //private boolean revisado = false;
 
 }
