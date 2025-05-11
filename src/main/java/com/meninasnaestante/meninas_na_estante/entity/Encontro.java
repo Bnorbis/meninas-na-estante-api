@@ -1,15 +1,13 @@
 package com.meninasnaestante.meninas_na_estante.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Data
+@Table(name = "encontro")
 public class Encontro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

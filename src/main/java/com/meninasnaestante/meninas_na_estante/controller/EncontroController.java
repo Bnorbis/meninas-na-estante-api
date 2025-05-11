@@ -2,19 +2,17 @@ package com.meninasnaestante.meninas_na_estante.controller;
 
 import com.meninasnaestante.meninas_na_estante.dto.EncontroDTO;
 import com.meninasnaestante.meninas_na_estante.service.EncontroService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/encontros")
+@RequiredArgsConstructor
 public class EncontroController {
 
     private final EncontroService encontroService;
-
-    public EncontroController(EncontroService encontroService) {
-        this.encontroService = encontroService;
-    }
 
     @GetMapping
     public List<EncontroDTO> listarTodos(){
