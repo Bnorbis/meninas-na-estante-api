@@ -8,6 +8,4 @@ import java.util.List;
 
 @Repository
 public interface EncontroRepository extends JpaRepository<Encontro, Long> {
-    //TODO buscar encontros revisados e aprovados apenas (para aparecerem no front end)
-    List<Encontro> findByRevisadoTrue();
 }
