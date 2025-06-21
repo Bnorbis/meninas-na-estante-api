@@ -1,0 +1,54 @@
+-- Criação da tabela
+CREATE TABLE livro (
+    id INTEGER PRIMARY KEY,
+    titulo TEXT NOT NULL,
+    autora TEXT NOT NULL,
+    genero TEXT,
+    descricao TEXT,
+    biografiaAutora TEXT,
+    anoPublicacao INTEGER,
+    editora TEXT,
+    imagemUrl TEXT
+);
+
+-- Inserção dos dados
+INSERT INTO livro (id, titulo, autora, genero, descricao, biografiaAutora, anoPublicacao, editora, imagemUrl) VALUES
+(1, 'A Menina Que Roubava Livros', 'Markus Zusak', 'Ficção Histórica',
+ 'Durante a Segunda Guerra Mundial, uma garota encontra consolo nos livros e compartilha suas leituras com outros.',
+ 'Markus Zusak é um autor australiano conhecido por obras que exploram temas de perda, coragem e humanidade.',
+ 2005, 'Intrínseca', 'https://br.web.img3.acsta.net/pictures/210/537/21053777_20131029202242322.jpg'),
+
+(2, 'A Hora da Estrela', 'Clarice Lispector', 'Romance',
+ 'A história de Macabéa, uma jovem nordestina que vive no Rio de Janeiro enfrentando as dificuldades da vida urbana.',
+ 'Clarice Lispector foi uma escritora e jornalista nascida na Ucrânia e naturalizada brasileira, conhecida por sua escrita introspectiva e inovadora.',
+ 1977, 'Rocco', 'https://upload.wikimedia.org/wikipedia/pt/thumb/b/be/A_Hora_da_Estrela_%28filme%29.jpg/250px-A_Hora_da_Estrela_%28filme%29.jpg'),
+
+(3, 'Ponciá Vicêncio', 'Conceição Evaristo', 'Romance',
+ 'O enredo é centrado na herança identitária do avô da protagonista, estabelecendo um diálogo constante entre passado e presente, imaginação e realidade, lembranças e fatos.',
+ 'Conceição Evaristo é uma mulher negra que foi empregada doméstica e conseguiu chegar ao topo da academia.',
+ 2017, 'Pallas', 'https://m.media-amazon.com/images/I/81EULWTz2PL.jpg'),
+
+(4, 'O peso do pássaro morto', 'Aline Bei', 'Romance',
+ 'O Peso do Pássaro Morto fala da trajetória de vida de uma mulher. A gente pensa que a personagem poderia ter tido ao menos um suspiro na vida, porque ela passa por muitas desgraças, mas, ao final, ela alcança uma alegria genuína com a vida que leva',
+ 'Aline Bei é uma escritora brasileira nascida em São Paulo, em 9 de outubro de 1987. Formada em Letras pela Pontifícia Universidade Católica de São Paulo (PUC-SP) e em Artes Cênicas pelo Teatro Escola Célia Helena, também possui pós-graduação em Escritas Performáticas pela PUC-Rio.',
+ 2017, 'Nós', 'https://m.media-amazon.com/images/I/61QCWnAtMJL.jpg'),
+
+(5, 'O parque das irmãs magníficas', 'Camila Sosa Villada', 'Romance',
+ 'Neste livro, a escritora argentina Camila Sosa Villada, de 42 anos, conta a história da personagem tia Encarna, uma travesti de 178 anos que, em uma noite, encontra um bebê abandonado e decide adotá-lo.',
+ 'Camila Sosa Villada é uma escritora, atriz e dramaturga argentina nascida em 28 de janeiro de 1982, em La Falda, província de Córdoba. Graduou-se em Comunicação Social e Teatro pela Universidade Nacional de Córdoba. Sua carreira artística começou no teatro, com destaque para a peça Carnes tolendas (2009), um retrato cênico autobiográfico sobre sua identidade travesti.',
+ 2021, 'Tusquets', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepau81jpzX41795uUaUGtVScGwP4aQebAAA&s'),
+
+(7, 'Quarto de Despejo', 'Carolina Maria de Jesus', 'Autobiografia',
+ 'O diário de uma mulher negra, favelada e mãe solo que registra com palavras simples e fortes sua luta diária pela sobrevivência.',
+ 'Carolina Maria de Jesus foi uma escritora brasileira, considerada uma das primeiras e mais importantes autoras negras do Brasil.',
+ 1960, 'Ática', 'https://a-static.mlcdn.com.br/800x560/livro-quarto-de-despejo-edicao-comemorativa-carolina-maria-de-jesus/magazineluiza/236528400/fc383007a370d7a074613f1085dfaed7.jpg'),
+
+(8, 'Olhos d''Água', 'Conceição Evaristo', 'Contos',
+ 'Uma coletânea de contos que revela as dores, afetos e resistências das mulheres negras brasileiras, com linguagem poética e realismo sensível.',
+ 'Conceição Evaristo é uma escritora, professora e pesquisadora brasileira. É reconhecida por sua escrita que valoriza as vivências negras e femininas, marcada pela ''escrevivência'', conceito que une escrita e experiência.',
+ 2014, 'Pallas', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-YE98yONDjfpHRIT8EyKBTccY1tTQpEkqJw&s'),
+
+(9, 'Um Defeito de Cor', 'Ana Maria Gonçalves', 'Romance histórico',
+ 'A história fictícia de Kehinde, uma mulher africana escravizada, que atravessa o século XIX contando sua trajetória de lutas, deslocamentos e resistência no Brasil escravocrata.',
+ 'Ana Maria Gonçalves é uma escritora brasileira, ex-publicitária, que se destacou pela profundidade histórica e cultural de suas obras, trazendo à tona as vozes de personagens negros na história do Brasil.',
+ 2006, 'Record', 'https://www.leonardodavinci.com.br/capas/750/9788501071750.jpg');

@@ -6,8 +6,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.meninasnaestante.meninas_na_estante.dto.LivroDTO;
 import com.meninasnaestante.meninas_na_estante.service.LivroService;
 
+@CrossOrigin(origins = "http://127.0.0.1:5500") // ou "*" se quiser liberar geral em desenvolvimento
 @RestController
 @RequestMapping("/livros")
 public class LivroController {
