@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@700&family=Inter:opsz,wght@14..32,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --color-h1: rgba(241, 114, 161, 0.6)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inria Sans", sans-serif;
+}
+
+body {
+    background-color: #faf5f8;
+}
+
+.hero-page {
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    background-image: url(assets/imgs/womanReading.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(151, 151, 151, 0.3);
+    align-items: center;
+}
+
+h1 {
+    color: var(--color-h1);
+    font-size: 2.5rem;
+    font-family: "Inika", serif;
+    font-weight: 700;
+}
+
+.input-pesquisa {
+    position: relative;
+    width: 20rem;
+}
+
+.input-pesquisa input {
+    text-align: center;
+    font-family: "Inika", serif;
+    font-weight: 700;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 30px;
+    width: 100%;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input-pesquisa input:focus {
+    outline: none;
+    background-color: white;
+    border: solid 2px var(--color-h1);
+    transition: .5s;
+}
+
+.input-pesquisa i {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+nav a {
+    cursor: pointer;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: 1px var(--color-h1);
+}
+
+.subtitle {
+    margin: 1rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-wrapper {
+    margin: 0 5rem;
+}
+
+.card-list .card-item {
+    list-style: none;
+    justify-items: center;
+}
+
+.card-list .card-item .card-link {
+    width: 250px;
+    color: #000;
+    display: block;
+    text-decoration: none;
+}
+
+.card-list .card-item .card-image {
+    width: 100%;
+    object-fit: cover;
+    border: none;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #000;
+}
+
+.main-cadastro {
+    min-height: calc(100vh - 16rem);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    align-self: flex-start;
+}
+
+.container-cadastro {
+    width: 500px;
+    height: 100%;
+    padding: 3rem;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-cadastro, .form-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.form-cadastro input, .form-login input {
+    padding: 10px;
+    background-color: #EDEDED;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#descricao {
+    padding: 10px;
+    background-color: #EDEDED;
+    border-style: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.form-cadastro label, .form-login label{
+    font-weight: 700;
+}
+
+.btn-submit {
+    background-color: #F172A199;
+    border: none;
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #F172A1;
+    color: white;
+    transition: 0.3s;
+}
+
+.text {
+    text-align: right;
+    font-size: 14px;
+}
+
+.link {
+    color: #F172A199;
+    text-decoration: none;
+}
+
+.swiper.container {
+    width: 100%;
+    padding: 2rem 0;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 0;
+    transition: transform 0.3s;
+}
+
+.card-item:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  padding: 0;
+  display: block;
+}
+
+.titulo-livro {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    cursor: grab;
+}
+
+.resultado-pesquisa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.icone {
+    font-size: 4rem;
+    color: #333;
+    background-color: rgba(240, 235, 244, 1);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.texto-resultados-pesquisa {
+    margin-left: 1rem;
+}
+
+.pesquisa-relacionada {
+    font-size: 1.5rem;
+}
+
+.busca {
+    color: #F172A1;
+}
+
+.main-sobre, .main-encontros {
+    background-color: #FFF;
+    margin: 4rem 10rem;
+    padding: 2rem 10rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-encontros {
+    align-items: start;
+}
+
+.container-encontros {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.encontros {
+  margin-top: 10px;
+  background-color: #fff0f5;
+  border-left: 6px solid #F172A1;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.encontros:hover {
+  transform: translateY(-3px);
+}
+
+.encontros p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+.encontros p span {
+  font-weight: bold;
+  color: #d63384;
+}
+
+
+.main-sobre img{
+    margin: 2rem 0;
+    width: 500px;
+    min-width: 500px;
+}
+
+.modal {
+    margin: auto;
+    width: 70rem;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.dialog-conteudo {
+    display: flex;
+    flex-direction: row;
+    height: 32rem;
+}
+
+.dialog-info {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#fechar-dialog {
+    width: 5rem;
+    height: 1.5rem;
+    outline: none;
+    background-color: #F172A1;
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+#dialog-imagem {
+    border: 1px solid #000;
+    width: 18rem;
+    height: auto;
+    align-self: center;
+}

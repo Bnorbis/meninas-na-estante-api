@@ -32,18 +32,14 @@ public class EncontroService {
         return EncontroDTO.fromEntity(salvo);
     }
 
-    public EncontroDTO atualizar(Long id, EncontroDTO dto) {
-        Encontro encontro = encontroRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Encontro não encontrado"));
+	public EncontroDTO atualizar(Long id, EncontroDTO dto) {
+		Encontro encontro = encontroRepository.findById(id)
+				.orElseThrow(() -> new RuntimeException("Encontro não encontrado"));
+		encontro = dto.toEntity();
 
-        encontro.setNomeProponente(dto.getNomeProponente());
-        encontro.setLivroSugerido(dto.getLivroSugerido());
-        encontro.setDataHora(dto.getDataHora());
-        encontro.setDescricao(dto.getDescricao());
-
-        Encontro encontroAtualizado = encontroRepository.save(encontro);
-        return EncontroDTO.fromEntity(encontroAtualizado);
-    }
+		Encontro encontroAtualizado = encontroRepository.save(encontro);
+		return EncontroDTO.fromEntity(encontroAtualizado);
+	}
 
     public void deletar (Long id){
         if(!encontroRepository.existsById(id)){
